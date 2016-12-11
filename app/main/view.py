@@ -9,8 +9,10 @@ from flask_restful import Resource
 @main.route('/usr/<regex("[a-z]{3}"):user_id>')
 # 正则扩展方法展示
 def user_id(user_id):
+    # return user_id
+    return redirect(url_for('main.hello_world'))  # 看这里跳转的时候是方法名需要注意了
 
-    return user_id
+
 @main_api.resource('/userapi/')
 class user(Resource):
     @staticmethod
