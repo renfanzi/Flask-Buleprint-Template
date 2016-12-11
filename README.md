@@ -11,5 +11,5 @@ manage.py
 ```
 而run.py 是以脚本形式，懒惰的写在了一个里面，方便对比
 最后注意一个地方就是蓝图里面的api装饰器
-
+其次是注意一点：在写接口的时候是mian.index等类似写法
 ![img](https://github.com/renfanzi/Flask-Buleprint-Template/blob/master/readme_img/flask_view_api.png)
